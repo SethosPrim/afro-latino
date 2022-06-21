@@ -1,0 +1,83 @@
+// définitions des médias //
+
+@mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+// définitions d'autres //
+
+@mixin box-shadow-primary {
+    box-shadow: 0 0.313em 0.313em $color-seven;
+}
+
+@mixin box-shadow-secondary {
+    box-shadow: 0 0.313em 0.313em $color-eight;
+}
+
+@mixin choice {
+    position: relative;
+    background: $color-five;
+    @include box-shadow-secondary;
+    border-radius: 0.938em;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0.938em -0.313em;
+    padding: 0.313em;
+    cursor: pointer;
+    & h3, p{
+        margin: 0.28em;
+    }
+    & h3{
+        transition: width 0.75s;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+@mixin place-heart {
+    top: 8px;
+    left: 8px;
+}
+
+@mixin loader-color {
+    position: absolute;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    opacity: 0;
+    &--1{
+        animation: paru 500ms forwards;
+    }
+    &--2{
+        animation: paru 500ms .5s forwards;
+    }
+    &--3{
+        animation: paru 500ms 1s forwards;
+    }
+    &--4{
+        background: $color-loader-primary;
+        background: $color-loader-rot;
+    }
+}
+
+@mixin position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin rot {
+    position: relative;
+    background: $color-five;
+    border-radius: 50%;
+    @include position;
+}

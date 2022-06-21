@@ -1,0 +1,132 @@
+@-webkit-keyframes paru {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes paru {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes loader-vis {
+  0% {
+    visibility: visible;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes loader-vis {
+  0% {
+    visibility: visible;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes loader-rot {
+  from {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+  to {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+}
+
+@keyframes loader-rot {
+  from {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+  to {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+}
+
+@-webkit-keyframes loader-rot--2 {
+  from {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes loader-rot--2 {
+  from {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@-webkit-keyframes loader-logo {
+  from {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes loader-logo {
+  from {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes valid {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes valid {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+/*# sourceMappingURL=main.css.map */
