@@ -1,17 +1,167 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import "utiles/_keyframes";
- *   |         ^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\main.scss 2:9  root stylesheet */
+@charset "UTF-8";
+/*@keyframes paru{
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"utiles/_keyframes\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\main.scss 2:9  root stylesheet";
+  @keyframes loader-vis{ 
+    0% {visibility: visible;}
+    85% {opacity: 1;}
+    100% {visibility: hidden; opacity: 0;}
+  }
+
+  @keyframes loader-rot{
+    from {transform: rotate(1turn);}
+    to {transform: rotate(0turn);}
+  }
+
+  @keyframes loader-rot--2{
+    from {transform: rotate(0turn);}
+    to {transform: rotate(1turn);}
+  }
+
+  @keyframes loader-logo{
+    from {transform: scale(3);}
+    to {transform: scale(0);}
+  }
+
+  @keyframes valid{
+    from {transform: rotate(-360deg);}
+    to {transform: rotate(0);}
+  }*/
+/*
+@mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
 }
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+// définitions d'autres //
+
+@mixin box-shadow-primary {
+    box-shadow: 0 0.313em 0.313em $color-seven;
+}
+
+@mixin box-shadow-secondary {
+    box-shadow: 0 0.313em 0.313em $color-eight;
+}
+
+@mixin choice {
+    position: relative;
+    background: $color-five;
+    @include box-shadow-secondary;
+    border-radius: 0.938em;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0.938em -0.313em;
+    padding: 0.313em;
+    cursor: pointer;
+    & h3, p{
+        margin: 0.28em;
+    }
+    & h3{
+        transition: width 0.75s;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+@mixin place-heart {
+    top: 8px;
+    left: 8px;
+}
+
+@mixin loader-color {
+    position: absolute;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    opacity: 0;
+    &--1{
+        animation: paru 500ms forwards;
+    }
+    &--2{
+        animation: paru 500ms .5s forwards;
+    }
+    &--3{
+        animation: paru 500ms 1s forwards;
+    }
+    &--4{
+        background: $color-loader-primary;
+        background: $color-loader-rot;
+    }
+}
+
+@mixin position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin rot {
+    position: relative;
+    background: $color-five;
+    border-radius: 50%;
+    @include position;
+}*/
+body {
+  margin: 0;
+}
+
+.bloc_header .line {
+  display: flex;
+  justify-content: space-around;
+  background-color: #e02b20;
+  color: white;
+  margin: auto;
+}
+.bloc_header .line .line-left {
+  display: flex;
+  margin: 10px auto;
+}
+.bloc_header .line .line-left .info {
+  display: flex;
+  padding: 0 6px;
+}
+.bloc_header .line .line-left .info .item {
+  line-height: 1.25;
+}
+.bloc_header .line .line-left .info .item i {
+  padding: 0 4px;
+}
+.bloc_header .line .line-left .info p {
+  margin: 0;
+}
+.bloc_header .line .line-left .info .mailing {
+  text-decoration: none;
+  color: white;
+}
+.bloc_header .line .line-right {
+  display: flex;
+  margin: 10px auto;
+}
+.bloc_header .line .line-right .social {
+  display: flex;
+}
+.bloc_header .line .line-right .social p {
+  margin: 0;
+}
+.bloc_header .line .line-right .social .network {
+  text-decoration: none;
+  color: white;
+  padding: 0 8px;
+}
+.bloc_header .line .line-right .social .media {
+  text-decoration: none;
+  color: white;
+  padding: 0 8px;
+}
+
+/*# sourceMappingURL=styles.css.map */

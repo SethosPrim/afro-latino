@@ -1,0 +1,51 @@
+.bloc_header {
+    & .line {
+        display: flex;
+        justify-content: space-around;
+        background-color: #e02b20;
+        color: white;
+        margin: auto;
+        & .line-left {
+            display: flex;
+            margin: 10px auto;
+            & .info {
+                display: flex;
+                padding: 0 6px;
+                & .item {
+                    line-height: 1.25;
+                    & i {
+                        padding: 0 4px;
+                    }
+                }
+                & p {
+                    margin: 0;
+                }
+                & .mailing {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+
+        & .line-right {
+            display: flex;
+            margin: 10px auto;
+            & .social {
+                display: flex;
+                & p {
+                    margin: 0;
+                }
+                & .network {
+                    text-decoration: none;
+                    color: white;
+                    padding: 0 8px;
+                }
+                & .media {
+                    text-decoration: none;
+                    color: white;
+                    padding: 0 8px;
+                }
+            }
+        }
+    }
+}
