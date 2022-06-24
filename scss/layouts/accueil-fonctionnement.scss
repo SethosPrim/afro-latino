@@ -1,3 +1,9 @@
 body {
     margin: 0;
+    & main {
+        position: absolute;
+        margin-top: -12%;
+        background: white;
+        width: 100%;
+    }
 }

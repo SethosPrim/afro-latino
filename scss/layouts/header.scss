@@ -48,4 +48,47 @@
             }
         }
     }
+
+    & .header-logo-nav {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 18%;
+        & #logo {
+            margin: auto;
+            & img {
+                width: 80%;
+                margin: 10px auto;
+            }
+        }
+        & .navigation {
+            margin: auto;
+            & .nav-bar {
+                display: flex;
+                & .nav-mobile {
+                    list-style-type: none;
+                }
+                & .nav-mobile a {
+                    text-decoration: none;
+                    color: black;
+                    padding: 0 8px;
+                }
+                & .red a {
+                    color: #e02b20;
+                }
+            }
+        }
+    }
+
+    & .picture-front {
+        & img {
+            width: 100%;
+        }
+        & .position {
+            margin: -20% auto 20% auto;
+            justify-content: center;
+            display: grid;
+            color: white;
+        }
+    }
 }
+
